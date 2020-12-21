@@ -4854,12 +4854,15 @@ p {
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/bg/header-bg-sm.jpg");
+  /* Retina displays */
   /* Above 1600px */
   /* Above 1920px */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat; }
+  @media only screen and (min-resolution: 192dpi) {
+    .header {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/bg/header-bg-md.jpg"); } }
   @media only screen and (min-width: 100em) {
     .header {
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/bg/header-bg-md.jpg"); } }
